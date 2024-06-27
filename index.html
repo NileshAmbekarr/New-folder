@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mobile Page</title>
+    <style>
+        /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+
+main {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    height: 400px;
+}
+#Wlogo{
+    height: 30px;
+    width: auto;
+    border: 50%;
+}
+button{
+    height: 70px;
+    width: 320px;
+    border-radius: 30px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    font-size: 30px;
+    color: white;
+}
+#anchor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        text-align: center;
+        flex: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <a href="https://wa.link/5ro64u"><img src="./photo.jpg" alt="Diamond Exchange"></a>
+        <button><a href="https://wa.link/5ro64u" id="anchor"><img id="Wlogo" src="./logoW.jpg" alt=""><span>GET ID NOW</span></a></button>
+    </main>
+    
+</body>
+</html>
